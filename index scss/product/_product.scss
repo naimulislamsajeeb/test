@@ -1,0 +1,80 @@
+#product{
+     padding-bottom: 70px;
+     .product-head{
+          padding-bottom: 80px;
+          text-align: center;
+          h3{
+               @include head;
+               
+          }
+          h3::after{
+               @include head_after;
+          }
+          h3::before{
+               @include head_before;
+          }
+     }
+     .product-body{
+          .product-btn{
+               text-align: center;
+               padding-bottom: 30px;
+               button{
+                    border: none;
+                    background-color: transparent;
+                    border-right: 2px solid $paragraph-color;
+                    padding:0 30px;
+                    line-height: 1;
+                    transition: .3s ;
+               }
+               button:hover{
+                    color: $hover-color;
+               }
+          }
+          .product-main{
+               .product-item{
+                    overflow: hidden;
+                    margin-bottom: 24px;
+                    .product-img{
+                         position: relative;
+                         .hover{
+                              @include product_hover;
+                              
+                              i{
+                              @include product_hover_i;
+                              overflow: hidden;
+                              }
+                              i:hover{
+                                   background-color: $hover-color;
+                                   border: 1px solid transparent;                                   
+                              }                            
+                         }                       
+                    }
+                    .product-text{
+                         .extra33{
+                              display: flex;
+                              justify-content: space-between;
+                              h3{
+                                   color: $header-colorh3;
+                                   font-size: 16px;
+                                   font-family: 'Raleway', sans-serif;
+                                   font-weight: 500;
+                                   padding: 15px 0;
+                              }                             
+                         }
+                         .star{
+                              i{
+                                   color: $hover-color;
+                              }
+                         }
+                    }
+               }
+               .product-item>.product-img:hover>.hover{
+                    right: 0;
+                    
+               }
+          }
+     }
+}
+#count{
+     padding: 50px 0;
+}

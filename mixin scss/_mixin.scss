@@ -1,0 +1,81 @@
+@mixin menu {
+     font-size:16px ;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 500;
+     color: $menu-color;
+}
+@mixin btn {
+     color: $white;
+     font-size: 16px;
+     background-color: transparent;
+     padding: 15px 20px;
+     border-radius: 3px;
+     
+}
+@mixin slider_btn{
+     color: $white;
+     margin: 5px;
+     height: 40px;
+     width: 40px;
+     line-height: 40px;
+     text-align: center;
+     font-size: 20px;
+     border: 1px solid $white;
+     cursor: pointer;
+
+}
+@mixin head {
+     font-family: 'Raleway', sans-serif;
+     font-weight: 500;
+     font-size: 40px;
+     color: $header-colorh3;
+     position: relative;
+     display: inline-block;
+     
+     
+}
+@mixin head_after {
+     position: absolute;
+     bottom: -20px;
+     left: 0;
+     background-color: $hover-color;
+     content: '';
+     height: 1px;
+     width: 50%;
+
+}
+@mixin head_before {
+     position: absolute;
+     bottom: -26px;
+     left: 0;
+     background-color: $hover-color;
+     content: '';
+     height: 1px;
+     width: 30%;
+
+}
+@mixin  product_hover {
+     position: absolute;
+     top: 0;
+     right: -100px;
+     height: 100%;
+     width: 100px;
+     background-color: rgba(0, 0, 0, 0.726);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all ease-in .4s;
+}
+@mixin  product_hover_i {
+     display: block;
+     color: $white;
+     height: 45px;
+     width: 45px;
+     line-height: 45px;
+     text-align: center;
+     border: 1px solid $white;
+     border-radius: 50%;
+     font-size: 20px;
+     margin: 20px 0;
+     transition: .4s;
+}

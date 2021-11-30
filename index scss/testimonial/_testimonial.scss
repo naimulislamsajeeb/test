@@ -1,0 +1,94 @@
+#testimonial{
+     padding: 80px 0 0 0;
+     position: relative;
+     .arrows{
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 40px;
+          z-index: 999;
+          
+          i{
+               @include slider_btn;
+               transition: .4s;
+               border-radius: 3px;
+          }
+          i:hover{
+               background-color: $hover-color;
+               border: 1px solid transparent;
+          }
+     }
+     .testimonial-head{
+          text-align: center;
+          padding-bottom: 80px;
+          h3{
+               position: relative;
+               @include head;
+          }
+          h3::after{
+               @include head_after;
+          }
+          h3::before{
+               @include head_before;
+          }
+     }
+     .testimonial-main{
+          background: url(../images/tb.png)no-repeat center;
+          padding-top: 80px;
+          padding-bottom: 120px;
+          background-size: cover;
+          position: relative;
+          z-index: 9;
+          .testimonial-slider{
+               .testimonial-item{
+                    display: flex;
+                    justify-content: space-between;
+                    color: $white;
+                    .testimonial-text{
+                         padding-left: 30px;
+                         padding-right: 80px;
+                         h3{
+                              font-family: 'Raleway', sans-serif;
+                              font-size: 20px;
+                              font-weight: 500;
+                              padding-bottom: 10px;
+                         }
+                         h4{
+                              font-family: 'Raleway', sans-serif;
+                              font-size: 16px;
+                              font-weight: 500;
+                              padding-bottom: 30px; 
+                         }
+                         p{
+                              color: #ddd;
+                              font-family: 'Open Sans', sans-serif;
+                              font-size: 14px;
+                              font-weight: 400;
+                              padding-bottom: 30px;
+                              line-height: 24px;
+                              
+                         }
+                         span{
+                              text-align: right;
+                              h4{
+                                   font-family: Autograf;
+                              font-size: 14px;
+                              font-weight: 400;
+                              }
+
+                         }
+                    }
+               }
+          }
+     }
+     .testimonial-main::after{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.808);
+          z-index: -1;
+     }
+}

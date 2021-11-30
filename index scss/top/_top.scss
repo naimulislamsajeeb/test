@@ -1,0 +1,38 @@
+#top{
+     background-color: $paragraph-color;
+
+     .top-main{
+          .top-item{
+               ul{
+                    li{
+                         display: inline-block;                           
+                         a{
+                              color: $unknown;
+                              font-family: 'Open Sans', sans-serif;
+                              font-size: 13px;
+                              font-weight: 400;
+                              transition: all linear .4s;
+                              display: block;
+                              padding-right: 20px;
+                              margin-right: 10px;
+                              border-right: 1px solid $unknown;
+                              line-height: 45px; 
+
+                              i{
+                                   padding: 0 2px;
+                                   font-size: 13px;
+                              }
+                         } 
+                         a:hover{
+                              color: $hover-color;
+                              padding-left:3px !important ;
+                              padding-right: 17px;
+                         }             
+
+                    }                                                                           
+                    
+               }
+          }
+     }
+     
+}

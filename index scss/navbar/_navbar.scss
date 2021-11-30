@@ -1,0 +1,57 @@
+#navbar{
+     background-color: rgb(255, 255, 255);
+     line-height: 90px;
+     ul{
+          li{
+               padding: 0 10px;
+               a{
+                    @include menu;
+                    transition: .4s;
+                    position: relative;
+               }
+               a:hover{
+                    color: $hover-color;
+               }
+               a::after{
+                    position: absolute;
+                    left: 0;
+                    bottom: 28px;
+                    content: "";
+                    background-color: $hover-color;
+                    height: 1px;
+                    width: 00%;
+                    transition: all ease-in .3s;
+               }
+               a::before{
+                    position: absolute;
+                    left: 0;
+                    bottom: 25px;
+                    content: "";
+                    background-color: $hover-color;
+                    height: 1px;
+                    width: 00;
+                    transition: all ease-in .4s;
+               }
+               a:hover:before{               
+                    width: 50%;
+               }
+               a:hover::after{               
+                    width: 70%;
+               }
+          }
+     }
+     .extra{
+          display: flex;
+          .i{
+               padding-right: 30px;
+               color: $menu-color !important;
+          }
+          i{
+               font-size: 16px;
+               padding-right: 5px;
+          }
+          a{
+               color: $hover-color;
+          }
+     }
+}

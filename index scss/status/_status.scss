@@ -1,0 +1,40 @@
+#status{
+     background-color: #f1f1f1;
+     .status-main{
+          .status-item{
+               text-align: center;
+               border-right: 1px solid $unknown;
+               padding: 25px 0;
+
+               h3{
+                    color: $header-colorh3;
+                    font-size: 24px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 400;
+                    transition: .4s;
+                    padding-bottom: 25px;
+                    i{
+                         padding-right: 5px;
+                    transition: .4s;
+                    }
+               }
+               p{
+                    color: $paragraph-color;
+                    font-size: 14px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 400;
+                    line-height: 24px;
+                    transition: .4s;
+               }
+          }
+          .status-item:hover>h3{
+               color: $hover-color;
+          }
+          .status-item:hover>p{
+               color: $hover-color;
+          }
+          .status-item:hover>h3>i{
+               color: $hover-color;
+          }
+     }
+}
